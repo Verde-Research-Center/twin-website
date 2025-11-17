@@ -1,0 +1,15 @@
+<nav role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <div class="nav-container">
+            <a href="{{ .Site.BaseURL }}" class="logo" aria-label="{{ .Site.Title }} - Home">{{ .Site.Params.logo | default "GP" }}</a>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="/" aria-current="false">Home</a></li>
+                <li><a href="/about/" aria-current="false">About</a></li>
+                <li><a href="/timeline/" aria-current="false">Timeline</a></li>
+                <li><a href="/resources/" aria-current="false">Resources</a></li>
+                <li><a href="/contact/" aria-current="false">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">☰</button>
+        </div>
+    </div>
+</nav>

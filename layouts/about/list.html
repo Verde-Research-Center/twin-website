@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="about-container" style="width: 100%; display: flex; justify-content: center;">
+    <article class="about-content" style="width: 70%; max-width: 1400px;">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">{{ .Title }}.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </article>
+</div>
+
+<style>
+.about-content .content ul {
+    padding-left: 1.5rem;
+    margin-left: 0;
+}
+
+.about-content .content li {
+    margin-bottom: 0.5rem;
+}
+
+.about-content .content p,
+.about-content .content li,
+.about-content .content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff !important;
+}
+
+.about-content .content strong {
+    color: #ffffff !important;
+}
+</style>
+
+{{ end }}

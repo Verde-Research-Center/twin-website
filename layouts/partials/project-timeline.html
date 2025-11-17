@@ -1,0 +1,193 @@
+<div class="project-timeline">
+    <div class="timeline">
+        {{ range .Site.Params.projectTimeline }}
+        <div class="timeline-item">
+            <div class="timeline-marker">
+                <span class="activity-icon">{{ .icon }}</span>
+            </div>
+            <div class="timeline-content">
+                <span class="timeline-date">{{ .period }}</span>
+                <div class="timeline-header">
+                    <h4>{{ .title }}</h4>
+                </div>
+                <p>{{ .description }}</p>
+                {{ if .activities }}
+                <div class="activities">
+                    <ul>
+                    {{ range .activities }}
+                        <li>{{ . }}</li>
+                    {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+                {{ if .keyActivity }}
+                <div class="key-activity">
+                    <span class="key-tag">{{ .keyActivity }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+.project-timeline {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #00d4ff, #9d50bb);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: #1a1a2e;
+    border: 2px solid #00d4ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    padding-right: 6rem;
+    border-radius: 10px;
+    border-left: 3px solid #00d4ff;
+}
+
+.timeline-header {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-header h4 {
+    color: #00d4ff;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.timeline-date {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9d50bb;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.activities ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.activities li {
+    margin: 0.5rem 0;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.key-activity {
+    margin-top: 1rem;
+}
+
+.key-tag {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    // Check which items are already visible on page load
+    timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (isVisible) {
+            // Immediately show items that are already visible
+            item.classList.add('visible');
+            item.style.transition = 'none';
+        }
+    });
+
+    // Observe for items that come into view later
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                // Re-enable transition for smooth animation
+                entry.target.style.transition = '';
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+</script>

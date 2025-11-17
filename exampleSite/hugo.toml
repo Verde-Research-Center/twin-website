@@ -1,0 +1,146 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+theme = "twin"
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+title = "TWIN Project - Digital & Green Transformation for European SMEs"
+languageCode = "en-US"
+
+[params]
+  author = "TWIN Project"
+  logo = "TWIN"
+  subtitle = "Digital Readiness • Green Transition • Competitive Growth"
+  description = "Equipping European SMEs with the tools, training, and strategies for sustainable digital transformation"
+
+  # Analytics (optional)
+  googleAnalytics = ""
+
+  # Social Media Links
+  [[params.social]]
+    name = "YouTube"
+    class = "youtube"
+    icon = "📺"
+    description = "Tech reviews and vlogs"
+    url = ""
+    button_text = "Visit Channel"
+
+  [[params.social]]
+    name = "Twitter"
+    class = "wechat"
+    icon = "🐦"
+    description = "Tech thoughts and daily updates"
+    url = ""
+    button_text = "Follow Me"
+
+  # Portfolio Items
+  [[params.portfolio]]
+    title = "Digital Nomad Community App"
+    type = "Mobile Application"
+    icon = "📱"
+    description = "A comprehensive platform for nomads to connect and collaborate"
+    tags = ["React Native", "Node.js", "MongoDB"]
+    project_url = "/projects/nomad-app/"
+
+  [[params.portfolio]]
+    title = "Another Project"
+    type = "Web Application"
+    icon = "🌐"
+    description = "Web application description"
+    tags = ["React", "Vue.js"]
+
+  # Travel Timeline
+  [[params.travels]]
+    city = "Bangkok"
+    country = "Thailand"
+    flag = "🇹🇭"
+    period = "2024.01 - 2024.03"
+    description = "Started my nomad journey in the vibrant capital of Thailand"
+    highlights = ["Co-working spaces", "Street food", "Tech meetups"]
+
+  [[params.travels]]
+    city = "Chiang Mai"
+    country = "Thailand"
+    flag = "🇹🇭"
+    period = "2024.04 - 2024.06"
+    description = "Digital nomad hub with amazing community and low cost of living"
+    highlights = ["Nomad Summit", "Temples", "Mountain views"]
+
+  [[params.travels]]
+    city = "Bali"
+    country = "Indonesia"
+    flag = "🇮🇩"
+    period = "2024.07 - Present"
+    description = "Current base with perfect blend of work and surf lifestyle"
+    highlights = ["Surfing", "Rice terraces", "Startup scene"]
+
+  # Project Timeline
+  [[params.projectTimeline]]
+    title = "Project Management & Kick-off"
+    period = "M1–M2"
+    icon = "🚀"
+    description = ""
+    activities = ["Coordination setup", "Internal communication channels", "Administrative and financial planning"]
+
+  [[params.projectTimeline]]
+    title = "Pilot Survey & SME Needs Assessment"
+    period = "M2–M4"
+    icon = "📊"
+    description = ""
+    activities = ["Research in participating countries", "Data collection & analysis", "Identification of opportunities, gaps & challenges"]
+
+  [[params.projectTimeline]]
+    title = "Development of Digital Transformation Roadmap & Resource Platform"
+    period = "M3–M7"
+    icon = "🗺️"
+    description = ""
+    activities = ["Creation of the G.R.O.W.T.H roadmap", "Tools & Resources Kit (templates, checklists, KPIs)", "Platform design & structure"]
+
+  [[params.projectTimeline]]
+    title = "Training Courses Implementation"
+    period = "M5–M9"
+    icon = "📚"
+    description = ""
+    activities = ["Industry 4.0", "Digital Security", "Competitiveness", "Customer Satisfaction & Change Management"]
+
+  [[params.projectTimeline]]
+    title = "Quality Assurance & Evaluation"
+    period = "M4–M12"
+    icon = "✅"
+    description = ""
+    activities = ["Ongoing monitoring", "KPI assessment", "Mid-term & final evaluation"]
+
+  [[params.projectTimeline]]
+    title = "European Awareness Scenario Workshop"
+    period = "M10"
+    icon = "🌍"
+    description = ""
+    activities = ["Cross-country learning", "Knowledge exchange", "Policy reflection"]
+
+  [[params.projectTimeline]]
+    title = "Dissemination & Exploitation"
+    period = "M6–M12"
+    icon = "📢"
+    description = ""
+    activities = ["Website & digital outreach", "Stakeholder engagement", "Public events & communication actions"]
+
+  # Contact Information
+  [[params.contact]]
+    icon = "📧"
+    name = "email"
+    value = "your@email.com"
+
+  [[params.contact]]
+    icon = "💬"
+    name = "wechat"
+    value = "your_wechat"
+
+  [[params.contact]]
+    icon = "🐦"
+    name = "twitter"
+    value = "@your_twitter"

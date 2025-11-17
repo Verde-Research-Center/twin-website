@@ -1,0 +1,108 @@
+[home]
+other = "Home"
+[social]
+other = "Social Media"
+[blog]
+other = "Blog"
+[portfolio]
+other = "Portfolio"
+[contact]
+other = "Contact"
+[latest_blog]
+other = "Latest Blog"
+[all_posts]
+other = "All"
+[read_more]
+other = "Read More"
+[prev_page]
+other = "Previous"
+[next_page]
+other = "Next"
+[date_format]
+other = "January 2006"
+[date_format_full]
+other = "January 2, 2006"
+[about]
+other = "About"
+[travel]
+other = "Travel"
+[hero_greeting]
+other = ""
+[follow_social]
+other = "Follow My Social Media"
+[learn_more]
+other = "Learn More"
+[social_description]
+other = "Sharing insights and experiences across platforms, welcome to connect"
+[portfolio_title]
+other = "Portfolio"
+[view_details]
+other = "View Details"
+[posts_count]
+other = "posts"
+[all_categories]
+other = "All Categories"
+[view_posts]
+other = "View Posts"
+[contact_email]
+other = "email.txt"
+[contact_wechat]
+other = "wechat.txt"
+[timeline]
+other = "Timeline"
+[news]
+other = "News"
+[resources]
+other = "Resources"
+[resources_intro]
+other = "Access comprehensive tools, training modules, and roadmaps to support your twin transition journey."
+[tools_kit_title]
+other = "Tools & Resources Kit"
+[tools_kit_desc]
+other = "A practical set of templates, checklists, and dashboards designed to support SMEs in every phase of their twin transition."
+[tools_kit_includes]
+other = "The kit includes:"
+[tools_kit_item1]
+other = "Self-assessment tools"
+[tools_kit_item2]
+other = "SWOT & strategic templates"
+[tools_kit_item3]
+other = "Cybersecurity checklists"
+[tools_kit_item4]
+other = "KPI dashboards"
+[tools_kit_item5]
+other = "Digital/green tools guidance"
+[training_modules_title]
+other = "Training Modules"
+[training_modules_desc]
+other = "Four structured training modules that build the digital capacity and green readiness of SMEs."
+[training_modules_cover]
+other = "Modules cover:"
+[training_module1]
+other = "Industry 4.0 – Digital Transformation"
+[training_module2]
+other = "Digital Security"
+[training_module3]
+other = "Competitiveness"
+[training_module4]
+other = "Customer Satisfaction & Change Management"
+[roadmap_title]
+other = "Digital Transition Roadmap"
+[roadmap_desc]
+other = "A step-by-step roadmap guiding SMEs through awareness, strategic planning, digital adoption, security, sustainability, and continuous improvement."
+[roadmap_phases]
+other = "This includes the 6 phases:"
+[roadmap_phase1]
+other = "Get Ready"
+[roadmap_phase2]
+other = "Reframe Strategy"
+[roadmap_phase3]
+other = "Operate Digitally"
+[roadmap_phase4]
+other = "Work Securely & Green"
+[roadmap_phase5]
+other = "Track & Improve"
+[roadmap_phase6]
+other = "Highlight Success"
+[download]
+other = "Download"

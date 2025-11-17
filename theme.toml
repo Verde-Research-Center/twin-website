@@ -1,0 +1,9 @@
+name = "Twin"
+license = "MIT"
+licenselink = ""
+description = "A modern Hugo theme"
+homepage = ""
+demosite = ""
+tags = ["blog", "portfolio", "multilingual", "responsive", "dark", "tech"]
+features = ["blog", "portfolio", "multilingual", "responsive", "seo", "analytics"]
+min_version = "0.120.0"

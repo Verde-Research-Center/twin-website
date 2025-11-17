@@ -1,0 +1,18 @@
+<footer style="background: rgba(0, 0, 0, 0.3); padding: 2rem 0; margin-top: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <div style="display: flex; align-items: center; justify-content: flex-start; gap: 2rem; width: 70%;">
+            <img src="{{ .Site.BaseURL }}images/cofundedlogo.png" alt="Co-funded by the European Union" style="height: 39px; width: auto; flex-shrink: 0;">
+            <p style="color: #ffffff; margin: 0; font-size: 0.8rem; line-height: 1.5; flex: 1; text-align: left;">
+                {{ if eq .Site.Language.Lang "en" }}
+                Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.
+                {{ else if eq .Site.Language.Lang "es" }}
+                Financiado por la Unión Europea. Las opiniones y puntos de vista expresados solo comprometen a su(s) autor(es) y no reflejan necesariamente los de la Unión Europea o los de la Agencia Ejecutiva Europea de Educación y Cultura (EACEA). Ni la Unión Europea ni la EACEA pueden ser considerados responsables de ellos.
+                {{ else if eq .Site.Language.Lang "el" }}
+                Με τη χρηματοδότηση της Ευρωπαϊκής Ένωσης. Οι απόψεις και οι γνώμες που διατυπώνονται εκφράζουν αποκλειστικά τις απόψεις των συντακτών και δεν αντιπροσωπεύουν κατ'ανάγκη τις απόψεις της Ευρωπαϊκής Ένωσης ή του Ευρωπαϊκού Εκτελεστικού Οργανισμού Εκπαίδευσης και Πολιτισμού (EACEA). Η Ευρωπαϊκή Ένωση και ο EACEA δεν μπορούν να θεωρηθούν υπεύθυνοι για τις εκφραζόμενες απόψεις.
+                {{ else if eq .Site.Language.Lang "tr" }}
+                Avrupa Birliği tarafından finanse edilmiştir. Ancak, ifade edilen görüş ve düşünceler yalnızca yazar(lar)a aittir ve Avrupa Birliği'nin veya Avrupa Eğitim ve Kültür Yürütme Ajansı'nın (EACEA) görüşlerini yansıtmak zorunda değildir. Ne Avrupa Birliği ne de EACEA bunlardan sorumlu tutulamaz.
+                {{ end }}
+            </p>
+        </div>
+    </div>
+</footer>

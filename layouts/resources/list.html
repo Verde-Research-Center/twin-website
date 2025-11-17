@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="resources-container">
+    <div class="resources-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">resources.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="resources-section">
+                <h1 class="section-title">📚 Resources</h1>
+                <p class="section-intro">Access comprehensive tools, training modules, and roadmaps to support your twin transition journey.</p>
+
+                <div class="resource-items">
+                    <!-- Tools & Resources Kit -->
+                    <div class="resource-card">
+                        <div class="resource-icon">🔧</div>
+                        <h2 class="resource-title">Tools & Resources Kit</h2>
+                        <p class="resource-description">
+                            A practical set of templates, checklists, and dashboards designed to support SMEs in every phase of their twin transition.
+                        </p>
+                        <div class="resource-features">
+                            <h3>The kit includes:</h3>
+                            <ul>
+                                <li>Self-assessment tools</li>
+                                <li>SWOT & strategic templates</li>
+                                <li>Cybersecurity checklists</li>
+                                <li>KPI dashboards</li>
+                                <li>Digital/green tools guidance</li>
+                            </ul>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="{{ .Site.BaseURL }}downloads/Tools and resources.pdf" class="btn btn-download" download>Download</a>
+                        </div>
+                    </div>
+
+                    <!-- Training Modules -->
+                    <div class="resource-card">
+                        <div class="resource-icon">🎓</div>
+                        <h2 class="resource-title">Training Modules</h2>
+                        <p class="resource-description">
+                            Four structured training modules that build the digital capacity and green readiness of SMEs.
+                        </p>
+                        <div class="resource-features">
+                            <h3>Modules cover:</h3>
+                            <ul>
+                                <li>Industry 4.0 – Digital Transformation</li>
+                                <li>Digital Security</li>
+                                <li>Competitiveness</li>
+                                <li>Customer Satisfaction & Change Management</li>
+                            </ul>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="{{ .Site.BaseURL }}downloads/Training Modules.pdf" class="btn btn-download" download>Download</a>
+                        </div>
+                    </div>
+
+                    <!-- Digital Transition Roadmap -->
+                    <div class="resource-card">
+                        <div class="resource-icon">🗺</div>
+                        <h2 class="resource-title">Digital Transition Roadmap</h2>
+                        <p class="resource-description">
+                            A step-by-step roadmap guiding SMEs through awareness, strategic planning, digital adoption, security, sustainability, and continuous improvement.
+                        </p>
+                        <div class="resource-features">
+                            <h3>This includes the 6 phases:</h3>
+                            <ul>
+                                <li>Get Ready</li>
+                                <li>Reframe Strategy</li>
+                                <li>Operate Digitally</li>
+                                <li>Work Securely & Green</li>
+                                <li>Track & Improve</li>
+                                <li>Highlight Success</li>
+                            </ul>
+                        </div>
+                        <div class="resource-footer">
+                            <a href="{{ .Site.BaseURL }}downloads/Roadmap4SMEs.pdf" class="btn btn-download" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
